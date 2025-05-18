@@ -180,6 +180,16 @@ article {
     box-shadow: 0 12px 16px rgba(11, 70, 88, 0.24), 0 17px 50px rgba(245, 243, 242, 0.19);
 }
 
+.proj{
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    display: flex;
+    width: 93vw;
+    height: 10vh;
+    margin: 30px 3% 10px 3%;
+}
+
 /* Para tabela */
 table {
     width: 100%;
