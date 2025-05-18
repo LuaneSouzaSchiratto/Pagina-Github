@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -14,11 +13,13 @@ body {
 
 /* Imagem de capa */
 #imgCapa {
-    max-width: 100%; /* Garantindo que a imagem se ajuste ao tamanho da tela */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 99vw;
+    height: 73vh;
+    object-fit: cover;
     opacity: 0.5;
     border-style: double;
-    position: relative; /* Alterado de fixed para relative */
+    box-sizing: border-box;
+    position: relative;
 }
 
 /* Estilo de lista de navegação */
@@ -50,7 +51,7 @@ a {
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 14px; /* Aumentado o tamanho da fonte */
+    font-size: 14px; 
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
@@ -82,7 +83,7 @@ h1 {
 footer {
     background-color: #424242;
     color: #fff;
-    position: relative; /* Alterado de fixed para relative */
+    position: relative; 
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -125,7 +126,7 @@ p {
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 14px; /* Ajustado para ser mais legível */
+    font-size: 14px; 
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
