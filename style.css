@@ -1,107 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*CSS da capa*/
 
-/* Estilo para o corpo da página */
-body {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(65, 60, 60));
-    margin: 0;
+body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(65, 60, 60));
+    margin: 0px;
     font-family: Georgia, serif;
-}
 
-/* Imagem de capa */
-#imgCapa {
-    width: 99vw;
-    height: 73vh;
-    object-fit: cover;
+}
+#imgCapa{
+    height: 60%;
+    width: 100%;
     opacity: 0.5;
     border-style: double;
-    box-sizing: border-box;
-    position: relative;
+    position: fixed; 
 }
-
-/* Estilo de lista de navegação */
-ul {
-    margin: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 ul li img {
-    width: 80px;
-    height: 80px;
+    width: 80px;  
+    height: 80px; 
     border-radius: 50%;
 }
-
-/* Estilizando os links */
-a {
+a{
     color: black;
     text-decoration: none;
 }
-
-/* Estilização dos botões */
-.button {
-    background-color: #424242;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px; 
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #73cbd1;
-    box-shadow: 0 12px 16px rgba(24, 190, 240, 0.24), 0 17px 50px rgba(24, 1, 1, 0.19);
-}
-
-/* Estilizando os botões de navegação */
-.Projeto1, .Projeto2, .Projeto3 {
-    list-style: none;
+ul{
     margin: 10px;
+    padding: 0px;
 }
-
-.container {
+.Projeto1{
+    list-style: none;
+    float: left;
+}
+.Projeto2{
+  margin: 10px;
+  list-style: none;
+  float: left;
+}
+.TopFacu{
+}
+.Projeto3{
+  margin: 10px;
+  list-style: none;
+  float: left;
+}
+.container{
     display: grid;
 }
-
-h1 {
+h1{
     margin: 20px;
+    align-items: center;
     text-shadow: 2px 2px 5px rgb(247, 244, 244);
-    text-align: center;
-}
+    text-align: center; /* Centraliza o texto dentro do h1 */
 
-/* Rodapé */
+}
 footer {
     background-color: #424242;
     color: #fff;
-    position: relative; 
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
 }
 
-/* Links sociais */
 .link-hover:hover {
-    color: rgb(0, 111, 139);
+    color: rgb(0, 111, 139); 
     text-decoration: none;
 }
 
-/* Estilização das listas de redes sociais */
+/*CSS da Sobre*/
 .social-list {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .social-list li {
@@ -112,151 +82,180 @@ footer {
 .social-list li a {
     color: #fff;
 }
-
-/* Parágrafos */
 p {
     line-height: 1.5;
     margin: 20px;
 }
-
-/* Botões de certificado */
-.button2 {
-    background-color: #e7e7e7;
+.button {
+    background-color:#424242;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(24, 190, 240, 0.24), 0 17px 50px 0 rgba(24, 1, 1, 0.19);
+  }
+  .certificados{
+    height: 200px;
+  }
+  /*Facudade*/
+ .button2 {
+    background-color:#e7e7e7;
     color: black;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 14px; 
+    font-size: 10px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.4s;
-}
-
-.button2:hover {
-    background-color: #73cbd1;
-    color: black;
-}
-
-/* Estilo de tópicos */
-.Topicofooter {
-    background-color: #424242;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.Topicoh1 {
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgb(247, 244, 244);
-    display: block;
-    margin-top: 60px;
-}
-
-/* Estilo de Estudo T.I. */
-.estudosection {
-    background-color: #73cbd1;
-    border-radius: 5px;
-    padding: 10px 0 10px 10px;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-article {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
-    padding: 10px 0 20px 10px;
-    box-sizing: border-box;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    box-shadow: 0 12px 16px rgba(11, 70, 88, 0.24), 0 17px 50px rgba(245, 243, 242, 0.19);
-}
-
-.proj{
-    box-sizing: border-box;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    display: flex;
-    width: 93vw;
-    height: 10vh;
-    margin: 30px 3% 10px 3%;
-}
-
-/* Para tabela */
-table {
-    width: 100%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #73cbd1;
-    color: white;
-}
-
-tr {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-size: 0.9em;
-    color: #555;
-}
-
-/* Estilização de ícones da lampada */
-#mainLampada {
+  }
+  .button2:hover {
+    background-color: #73cbd1; 
+    color:black;
+  }
+    /*Tópico*/
+    .Topicofooter{
+        background-color: #424242;
+        color: #fff;
+        position:relative; 
+        bottom: 0;
+        width: 100%; 
+    }
+   .Topicoh1{
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgb(247, 244, 244);
+        display: block;
+        margin-top: 60px;
+      }
+      /*CSS de Estudo T.I.*/
+      .estudosection{
+        background-color: #73cbd1; 
+        border-radius: 5px;
+        padding: 10px 0px 10px 10px;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      article {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+        padding: 10px 0px 20px 10px;
+        box-sizing: border-box;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        box-shadow: 0 12px 16px 0 rgba(11, 70, 88, 0.24), 0 17px 50px 0 rgba(245, 243, 242, 0.19);
+      }
+      .printsfa { 
+        width: 90%; 
+        background-color: #424242;
+       }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .listad{
+        display: inline-block;
+        padding: 20px;
+        border-radius: 10px;
+     }
+     .desenvolvimentoDeSoftware{
+      background-color:#424242;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+     }
+     .desenvolvimentoDeSoftware:hover {
+      background-color: #5c6061; 
+      color: white;
+    }
+    /*tabela*/
+    table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color:#73cbd1;
+            color: white;
+        }
+        tr{
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        caption {
+            caption-side: bottom;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        figure{
+            width: 100%;
+        }
+/*Projeto - Lampada*/
+#mainLampada{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-#turnOff, #turnOn {
+#turnOff {
     width: 80px;
 }
+#turnOn {
+  width: 80px;
+}
+/*Projeto - Calculadora*/
 
-/* Estilização da calculadora */
-#maincalculadora {
+#maincalculadora{
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-}
-
-#containerCalculadora {
+  
+  }
+  
+  #containerCalculadora{
     display: flex;
     flex-direction: column;
-    background: rgb(9, 157, 194);
+    background: rgb(9, 157, 194); 
     width: 400px;
     height: 600px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
-}
-
-.title {
+  }
+  
+  .title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,31 +264,30 @@ caption {
     font: bold 2.5rem serif;
     border-bottom: solid 5px black;
     margin-bottom: 20px;
-}
-
-.input {
+  }
+  
+  .input {
     display: flex;
     width: 300px;
     height: 50px;
     justify-content: space-between;
     align-items: center;
-}
-
-.input input {
+  }
+  .input input {
     width: 200px;
     height: 50px;
     border-radius: 5px;
-    border: none;
+    border:none;
     outline: 0;
     font: bold 1.5rem serif;
     text-align: center;
-}
-
-.input label {
+  }
+  
+  .input label {
     font: bold 1.5rem serif;
-}
-
-button {
+  }
+  
+  button{
     width: 300px;
     height: 40px;
     font: bold 1.2rem serif;
@@ -298,9 +296,9 @@ button {
     outline: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.result {
+  }
+  
+  .result{
     display: flex;
     margin-top: 20px;
     align-items: center;
@@ -310,8 +308,14 @@ button {
     font: italic 1.5rem serif;
     box-shadow: 0px 0px 10px black;
     background: #000;
-    color: rgb(255, 198, 0);
+    color: rgb(255,198,0);
     padding: 20px;
     box-sizing: border-box;
     user-select: none;
-}
+  }
+  
+      
+
+      
+
+    
