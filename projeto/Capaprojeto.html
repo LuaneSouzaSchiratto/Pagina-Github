@@ -9,35 +9,56 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-    <div class="container">
         <header>
             <nav>
-                <ul>
-                    <li class="Projeto1"><img src="../img/emoji.jpeg" alt="emoji"></li>
+                <ul class="navbar">
+                    <li class="Projeto1"><img src="../img/emoji.jpeg" alt="Ícone representando um emoji do projeto"></li>
                     <li class="Projeto2"><a href="../index.html" class="button">Voltar</a></li>
                 </ul>
             </nav>
         </header>
-        <h1>Projetos criados em JavaScript</h1>
+        <div class="container">
+        <main>
+            <h1>Projetos criados em JavaScript</h1>
 
-            <article class="proj">
-                <h2>Calculadora de IMC</h2>
-                <p>Calculadora criada em JavaScript para calcular o Índice de Massa Corporal.</p>
-                <a href="../projeto/Cauculadora/calculadoraIMC.html" class="desenvolvimentoDeSoftware">Clique para verificar</a>
-            </article>
-
-            <article class="proj">
-                <h2>Lâmpada</h2>
-                <p>Projeto de lâmpada interativa desenvolvida com HTML, CSS e JavaScript.</p>
-                <a href="../projeto/lampada/lampada.html" class="desenvolvimentoDeSoftware">Clique para verificar</a>
-            </article>
+            <section class="projects">
+                <article class="proj">
+                    <div id="containerCalculadora">
+                        <div class="title"> Calculadora - IMC </div>
+                        <div class="input">
+                            <label>Nome:</label>
+                            <input type="text" id='nome'>
+                        </div>
+                        <div class="input">
+                            <label>Altura:</label>
+                            <input type="number" id='altura'>
+                        </div>
+                        <div class="input">
+                            <label>Peso:</label>
+                            <input type="number" id='peso'>
+                        </div>
+                        <button id='calcular'>Calcular</button>
+                
+                        <div class="result" id='resultado'></div>
+                </article>
+            </section>
+            <section class="projects">
+            <section id="maincalculadora">
+                <article class="proj">
+                    
+                    
+                </article>
+            </section>
+        </section> 
+        </main>
     <footer>
         <ul class="social-list">
             <li><a href="https://www.linkedin.com/in/luane-schiratto-9417052a9" target="_blank" class="link-hover">LinkedIn</a></li>
             <li><a href="https://www.youtube.com/@luanehinata7563" target="_blank" class="link-hover">Youtube</a></li>
             <li><a href="https://www.facebook.com/yourusername">Github</a></li>
         </ul>
-    </footer>  
-    </div>   
+    </footer> 
+       </div>
+    <script src="./imc.js"></script>
 </body>
 </html>
