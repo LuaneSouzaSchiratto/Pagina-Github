@@ -174,13 +174,6 @@ p {
         }
        
 /*Projeto - Lampada*/
-#mainLampada{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
 #turnOff {
     width: 80px;
 }
@@ -198,7 +191,7 @@ p {
   
   }
   
-  #containerCalculadora{
+  #content{
     display: flex;
     flex-direction: column;
     background: rgb(9, 157, 194); 
@@ -274,10 +267,6 @@ header nav .navbar {
   padding: 10px;
 }
 
-.logo img {
-  width: 50px;
-  height: auto;
-}
 .button {
   background-color:#424242;
   color: white;
@@ -317,4 +306,11 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease-in-out;
 
+}
+
+.imgproj{
+    height: 100%;
+    width: 100%;
+    border-style: double;
+    position: sticky; 
 }
