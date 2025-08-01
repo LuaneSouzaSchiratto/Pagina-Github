@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luane Souza Melo Schiratto">
-    <meta name="Description"content="Pagina organizacional de estudos">
+    <meta name="Description" content="Pagina organizacional de estudos">
     <title>Capa</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
     <header>
-            <nav>
-                <ul class="navbar">
-                    <li class="Projeto1"><img src="../img/emoji.jpeg" alt="Ícone representando um emoji do projeto"></li>
-                    <li class="Projeto2"><a href="../index.html" class="button">Voltar</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container">
-            <h1>Projetos criados em JavaScript</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="Projeto1"><img src="../img/emoji.jpeg" alt="Ícone representando um emoji do projeto"></li>
+                <li class="Projeto2"><a href="../index.html" class="button">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Projetos criados em JavaScript</h1>
         <main>
             <section class="projects">
                 <article class="proj">
@@ -37,7 +39,7 @@
                             <input type="number" id='peso'>
                         </div>
                         <button id='calcular'>Calcular</button>
-                
+
                         <div class="result" id='resultado'></div>
                     </div>
                 </article>
@@ -51,17 +53,34 @@
                         </div>
                     </div>
                 </article>
+                <article class="proj">
+                    <div id="content">
+                        <div>
+                            <img class="imgproj" src="../img/CemafDesligado.png" id='img'>
+                        </div>
+                        <div id='buttons'>
+                            <div id='buttons'>
+                                <button id='red' class="button">Vermelho</button>
+                                <button id='yellow' class="button">Amarelo</button>
+                                <button id='green' class="button">Verde</button>
+                                <button name='teste' id='automatic' class="button">Automático</button>
+                            </div>
+                        </div>
+                </article>
             </section>
         </main>
-    <footer>
-        <ul class="social-list">
-            <li><a href="https://www.linkedin.com/in/luane-schiratto-9417052a9" target="_blank" class="link-hover">LinkedIn</a></li>
-            <li><a href="https://www.youtube.com/@luanehinata7563" target="_blank" class="link-hover">Youtube</a></li>
-            <li><a href="https://github.com/LuaneSouzaSchiratto/Pagina-Github">Github</a></li>
-        </ul>
-    </footer> 
-       </div>
+        <footer>
+            <ul class="social-list">
+                <li><a href="https://www.linkedin.com/in/luane-schiratto-9417052a9" target="_blank"
+                        class="link-hover">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@luanehinata7563" target="_blank" class="link-hover">Youtube</a>
+                </li>
+                <li><a href="https://github.com/LuaneSouzaSchiratto/Pagina-Github">Github</a></li>
+            </ul>
+        </footer>
+    </div>
     <script src="imc.js"></script>
     <script src="lampada.js"></script>
+    <script src="./semaforo.js"></script>
 </body>
 </html>
